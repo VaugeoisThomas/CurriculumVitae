@@ -1,0 +1,112 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#bloc_page{
+    width: 100%;
+    margin: auto;
+}
+
+header, main{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Colonne de droite */
+.right_col{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 5%;
+}
+
+#name > h1{
+    text-transform: uppercase;
+}
+
+#name > p{
+    font-size: larger;
+}
+
+#blue{
+    color: #19acdf;
+}
+
+#underline{
+    text-decoration: underline #19acdf;
+}
+
+/* Colonne de gauche */
+.left_col{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: #3f3f3f;
+    color: #ffffff;
+}
+#picture{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#pictureOfMe{
+    width: 50%;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.informationsHead{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.informationsLogo, .logo{
+    color: #19acdf;
+    font-size: x-large;
+    width: 10%;
+}
+
+.title{
+    text-transform: uppercase;
+    width: 90%;
+}
+
+.line{
+    width: 100%;
+    border: 1px solid #19acdf;
+}
+
+.degree, .experiences{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.date ,.content{
+    width: 50%;
+}
+
+#informations > h2, #hobby > h2, #about > h2{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #19acdf;
+}
+
+#about{
+    height: 70%;
+}
+
+#website > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#adress, #phone, #email, #website{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding-left: 10%;
+}
