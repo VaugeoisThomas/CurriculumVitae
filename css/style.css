@@ -1,9 +1,16 @@
-@media all and (max-width: 1024px){
+@media all and (max-width: 768px){
     body{
         font-size: 0.4em;
     }
     .logo{
         display: none;
+    }
+}
+
+@media all and (width:375px)
+{
+    body{
+        font-size: 0.3em;
     }
 }
 
