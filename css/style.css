@@ -7,10 +7,10 @@
     }
 }
 
-@media all and (width:375px)
-{
-    body{
-        font-size: 0.3em;
+@media all and (width: 320px){
+
+    .left_col{
+        width: 80px;
     }
 }
 
@@ -34,7 +34,7 @@ header, main{
 .right_col{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 65%;
     margin-left: 5%;
 }
 
@@ -58,7 +58,7 @@ header, main{
 .left_col{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 30%;
     background-color: #3f3f3f;
     color: #ffffff;
 }
