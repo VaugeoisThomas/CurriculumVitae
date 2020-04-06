@@ -1,28 +1,16 @@
-@media all and (max-width: 768px){
-    body{
-        font-size: 0.4em;
-    }
-    .logo{
-        display: none;
-    }
-}
-
-@media all and (width: 320px){
-
-    .left_col{
-        width: 80px;
-    }
-}
-
-
-
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 #bloc_page{
-    width: 100%;
+    width: 900px;
     margin: auto;
+    border: 1px solid #3f3f3f;
 }
 
 header, main{
@@ -36,6 +24,10 @@ header, main{
     flex-direction: column;
     width: 65%;
     margin-left: 5%;
+}
+
+#name{
+    margin-top: 40px;
 }
 
 #name > h1{
@@ -63,15 +55,27 @@ header, main{
     color: #ffffff;
 }
 #picture{
+    height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 #pictureOfMe{
-    width: 50%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    border: 1px solid #19acdf;
     justify-content: center;
+}
+
+.informations{
+    margin-right: 5%;
+}
+
+.informations, #informations{
+    margin-top: 2%;
 }
 
 .informationsHead{
@@ -92,7 +96,7 @@ header, main{
 }
 
 .line{
-    width: 100%;
+    width: 80%;
     border: 1px solid #19acdf;
 }
 
@@ -100,10 +104,10 @@ header, main{
     margin-top: 2%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.date ,.content{
+.date, .content{
     width: 50%;
 }
 
@@ -117,6 +121,10 @@ header, main{
     height: 70%;
 }
 
+#about p{
+    padding: 10% 10% 0 10%;
+}
+
 #website > a{
     text-decoration: none;
     color: #ffffff;
@@ -127,4 +135,24 @@ header, main{
     flex-wrap: wrap;
     align-items: baseline;
     padding-left: 10%;
+    margin: 10% 0 10% 0;
+}
+
+#adress p, #phone p, #email p, #website a{
+    padding-left: 20px;
+}
+
+.recommandation{
+    display: flex;
+    flex-direction: row;
+}
+
+@media all and (max-width: 768px){
+   #bloc_page{ width: auto; }
+   main,header{ flex-direction: column;}
+   .left_col, .right_col{width: auto; margin-top: 2%;}
+   #name {text-align: center;}
+   #informations, .informations, #adress, #phone, #email, #website {margin: 0;}
+   #about p {padding: 0 10% 0 10%;
+}
 }
