@@ -11,6 +11,7 @@ h1, h2, h3, h4, h5, h6, p{
     width: 900px;
     margin: auto;
     border: 1px solid #3f3f3f;
+    word-wrap: break-word;
 }
 
 header, main{
@@ -160,6 +161,5 @@ header, main{
    .left_col, .right_col{width: auto; margin-top: 2%;}
    #name {text-align: center;}
    #informations, .informations, #adress, #phone, #email, #website {margin: 0;}
-   #about p {padding: 0 10% 0 10%;
-}
+   #about p {padding: 0 10% 0 10%;}
 }
