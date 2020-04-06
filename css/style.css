@@ -147,6 +147,13 @@ header, main{
     flex-direction: row;
 }
 
+#logoHobby{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
 @media all and (max-width: 768px){
    #bloc_page{ width: auto; }
    main,header{ flex-direction: column;}
