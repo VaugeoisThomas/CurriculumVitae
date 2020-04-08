@@ -1,5 +1,5 @@
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -23,6 +23,7 @@ header, main{
 .right_col{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 65%;
     margin-left: 5%;
 }
@@ -44,7 +45,7 @@ header, main{
 }
 
 #underline{
-    text-decoration: underline #19acdf;
+    border-bottom: 0.5px solid #19acdf;
 }
 
 /* Colonne de gauche */
@@ -55,6 +56,7 @@ header, main{
     background-color: #3f3f3f;
     color: #ffffff;
 }
+
 #picture{
     height: 200px;
     display: flex;
@@ -75,14 +77,11 @@ header, main{
     margin-right: 5%;
 }
 
-.informations, #informations{
-    margin-top: 2%;
-}
-
 .informationsHead{
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    margin: 0% 0 5% 0;
 }
 
 .informationsLogo, .logo{
@@ -91,26 +90,32 @@ header, main{
     width: 10%;
 }
 
+.sectionLogo{
+    color: #19acdf;
+    width: 10%;
+}
+
+
 .title{
     text-transform: uppercase;
     width: 90%;
 }
 
 .line{
-    width: 80%;
+    flex: 0.8;
     border: 1px solid #19acdf;
 }
 
-.degree, .experiences{
-    margin-top: 2%;
+.degree, .experiences, .recommandation{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin-bottom: 10%;
 }
 
 .date, .content{
     width: 50%;
 }
+
 
 #informations > h2, #hobby > h2, #about > h2{
     text-align: center;
@@ -119,14 +124,14 @@ header, main{
 }
 
 #about{
-    height: 70%;
+    flex: 1;
 }
 
 #about p{
     padding: 10% 10% 0 10%;
 }
 
-#website > a{
+#website a{
     text-decoration: none;
     color: #ffffff;
 }
@@ -140,19 +145,21 @@ header, main{
 }
 
 #adress p, #phone p, #email p, #website a{
-    padding-left: 20px;
-}
-
-.recommandation{
-    display: flex;
-    flex-direction: row;
+    padding-left: 15px;
 }
 
 #logoHobby{
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+}
 
+.logoBorder{
+    border: 2px solid #19acdf;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 @media all and (max-width: 768px){
