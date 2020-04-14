@@ -183,4 +183,5 @@ header, main{
    #name {text-align: center;}
    #informations, .informations, #adress, #phone, #email, #website {margin: 0;}
    #about p {padding: 5% 10% 5% 10%;}
+   .content {padding-right: 2%;}
 } 
