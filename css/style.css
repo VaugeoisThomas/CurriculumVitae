@@ -207,9 +207,9 @@ header, main{
 
 @media all and (max-width: 768px){
    #bloc_page{ width: auto; }
-   main,header{ flex-direction: column;}
+   main,header{ flex-direction: column; margin-bottom: 2%;}
    .left_col, .right_col{width: auto; margin-top: 2%;}
-   #name {text-align: center;}
+   #name {text-align: center; padding-bottom: 5%;}
    #informations, .informations, #adress, #phone, #email, #website {margin: 0;}
    #about p {padding: 5% 10% 5% 10%;}
    .content {padding-right: 2%;}
