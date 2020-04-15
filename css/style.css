@@ -193,6 +193,7 @@ header, main{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 90%;
 }
 
 .logoBorder{
@@ -212,5 +213,3 @@ header, main{
    #informations, .informations, #adress, #phone, #email, #website {margin: 0;}
    #about p {padding: 5% 10% 5% 10%;}
    .content {padding-right: 2%;}
-
-@media all and (max-width)
