@@ -1,12 +1,17 @@
 /* General */
 
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    color: #3f3f3f;
 }
 
 h1, h2, h3, h4, h5, h6, p{
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bolder;
 }
 
 #bloc_page{
@@ -105,10 +110,16 @@ header, main{
     width: 10%;
 }
 
+.sectionLogoBold{
+    color: #19acdf;
+    width: 10%;
+    font-size: x-small;
+}
 
 .title{
     text-transform: uppercase;
     width: 90%;
+    font-weight: bold;
 }
 
 .line{
@@ -119,11 +130,19 @@ header, main{
 .degree, .experiences, .recommandation{
     display: flex;
     flex-direction: row;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .date, .content{
     width: 50%;
+}
+
+.date{
+    font-weight: bold;
+}
+
+.content h3{
+    text-transform: uppercase;    
 }
 
 /* main left_col */
@@ -147,10 +166,19 @@ header, main{
     color: #ffffff;
 }
 
+
+#adress{
+    padding-top: 5%;
+}
+
+#website{
+    padding-bottom: 5%;
+}
+
 #adress, #phone, #email, #website{
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     padding-left: 10%;
     margin: 10% 0 10% 0;
 }
@@ -170,7 +198,7 @@ header, main{
 .logoBorder{
     border: 2px solid #19acdf;
     border-radius: 50%;
-    padding: 5px;
+    padding: 15px;
 }
 
 
@@ -184,4 +212,5 @@ header, main{
    #informations, .informations, #adress, #phone, #email, #website {margin: 0;}
    #about p {padding: 5% 10% 5% 10%;}
    .content {padding-right: 2%;}
-} 
+
+@media all and (max-width)
